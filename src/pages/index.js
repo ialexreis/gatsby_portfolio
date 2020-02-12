@@ -2,13 +2,15 @@ import React from "react"
 import "../utils/css/style.scss"
 import Navbar from "../components/navbar"
 import Banner from "../components/banner"
+import AboutMe from "../components/aboutMe"
 
 const IndexPage = () => {
   return (
-    <section className="hero container is-fullheight is-default is-bold">
+    <div className="layout-wrapper">
         <Navbar />
         <Banner />
-    </section>
+        <AboutMe />
+    </div>
   )
 }
 export default IndexPage

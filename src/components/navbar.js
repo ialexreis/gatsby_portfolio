@@ -1,11 +1,12 @@
 import React from "react"
 
 export default () => (
-  <nav className="navbar custom-nav" role="navigation" aria-label="main navigation">
+  <nav className="navbar is-transparent custom-nav" role="navigation" aria-label="main navigation">
+   <div className="container">
     <div className="navbar-brand">
       <a className="navbar-item" href="https://bulma.io">
         <img
-          src="https://bulma.io/images/bulma-logo.png"
+          src="https://bulma.io/images/bulma-logo-white.png"
           alt="Bulma: Free, open source, and modern CSS framework based on Flexbox"
           width="112"
           height="28"
@@ -24,6 +25,7 @@ export default () => (
             <a href="#" className="navbar-item">Uses</a>
             <a href="#" className="button is-danger is-rounded">Contacts</a>
         </div>
+    </div>
     </div>
   </nav>
 )
