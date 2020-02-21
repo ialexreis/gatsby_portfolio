@@ -23,7 +23,7 @@ export default () => (
             <a href="#" className="navbar-item">About Me</a>
             <a href="#" className="navbar-item">Projects</a>
             <a href="#" className="navbar-item">Uses</a>
-            <a href="#" className="button is-danger is-rounded">Contacts</a>
+            <button className="btn-grad">Contacts</button>
         </div>
     </div>
     </div>

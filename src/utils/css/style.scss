@@ -18,7 +18,7 @@ html{
 
 body{
   margin: 0 auto;
-  background: linear-gradient(17deg, #000000, #b3220f, #f16e53);
+  background: linear-gradient(17deg, #2A81DE, #DBD1DF, #3AD5D7, #3DC519);
   background-size: 600% 600%;
   
   -webkit-animation: AnimationName 9s ease infinite;
@@ -51,6 +51,24 @@ h1, h2, h3, h4 {
 p, a, span, label {
   font-family: $subtitle;
   z-index: 2;
+}
+
+.btn-grad {
+  border-radius: 100rem;
+  padding: 1rem;
+  font-size: 1rem;
+  padding: .5rem 3rem;
+  color: white;
+  box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+  border: solid 3px transparent;
+  background-image: linear-gradient(transparent, rgba(255, 255, 255, 0)), linear-gradient(101deg, #78e4ff, #ff48fa);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: transparent;
+  &:hover{
+    box-shadow: 2px 1000px 1px transparent;
+    color: white;
+  }
 }
 
 .is-1{
