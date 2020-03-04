@@ -1,16 +1,11 @@
 import React from "react"
-import "../utils/css/style.scss"
-import Navbar from "../components/navbar"
-import Banner from "../components/banner"
-import AboutMe from "../components/aboutMe"
+import Banner from "../components/banner";
+import "../utils/scss/style.scss"
 
-const IndexPage = () => {
-  return (
-    <div className="layout-wrapper">
-        <Navbar />
-        <Banner />
-        <AboutMe />
-    </div>
-  )
+export default () => {
+    return ( 
+        <div className="layout-wrapper">
+            <Banner />
+        </div>
+    ) 
 }
-export default IndexPage
