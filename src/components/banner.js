@@ -6,17 +6,17 @@ import illustration from "../utils/img/hello.png"
 
 const Banner = () => {
   return (
-    <div class="header-wrapper" id="home">
-      <section class="hero is-fullheight" id="hero">
+    <div className="header-wrapper" id="home">
+      <section className="hero is-fullheight" id="hero">
         <NavbarMobile />
-        <div class="hero-body">
-          <div class="container has-text-centered">
+        <div className="hero-body">
+          <div className="container has-text-centered">
             <div className="columns is-vcentered">
               <div className="column is-4 is-offset-1 landing-caption">
-                <h1 class="subtitle">Hey there, I'm</h1>
-                <h2 class="title">Alexandre</h2>
+                <h1 className="subtitle">Hey there, I'm</h1>
+                <h2 className="title">Alexandre</h2>
                 <hr/>
-                <h1 class="subtitle profession">Backend Developer</h1>
+                <h1 className="subtitle profession">Backend Developer</h1>
                 <div className="button-wrap">
                 <Link to="#" className="cta">
                   <span>Resumé</span>

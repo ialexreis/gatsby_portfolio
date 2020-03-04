@@ -5,8 +5,10 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false)
 
   useEffect(() => {
+  
     const handleScroll = () => {
-      const isScrolled = window.scrollY > 1024
+      let heroHeight = document.getElementById("hero").offsetHeight
+      const isScrolled = window.scrollY > heroHeight
       if (isScrolled !== scrolled) {
         setScrolled(!scrolled)
       }
@@ -19,12 +21,12 @@ const Navbar = () => {
   }, [scrolled])
 
   return (
-    <div class="hero-foot" data-active={scrolled}>
-      <div class="hero-foot--wrapper">
-        <div class="columns">
-          <div class="column is-12 hero-menu-desktop has-text-centered">
+    <div className="hero-foot" data-active={scrolled}>
+      <div className="hero-foot--wrapper">
+        <div className="columns">
+          <div className="column is-12 hero-menu-desktop has-text-centered">
             <ul>
-              <li class="is-active">
+              <li className="is-active">
                 <Link to="#">About Me</Link>
               </li>
               <li>
