@@ -8,7 +8,8 @@ const Navbar = () => {
   
     const handleScroll = () => {
       let heroHeight = document.getElementById("hero").offsetHeight
-      const isScrolled = window.scrollY > heroHeight
+      let heroNavHeight = document.getElementById("nav-foot").offsetHeight
+      const isScrolled = window.scrollY > (heroHeight - heroNavHeight)
       if (isScrolled !== scrolled) {
         setScrolled(!scrolled)
       }
@@ -21,7 +22,7 @@ const Navbar = () => {
   }, [scrolled])
 
   return (
-    <div className="hero-foot" data-active={scrolled}>
+    <div className="hero-foot" id="nav-foot" data-active={scrolled}>
       <div className="hero-foot--wrapper">
         <div className="columns">
           <div className="column is-12 hero-menu-desktop has-text-centered">

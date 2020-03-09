@@ -7,9 +7,7 @@ $primary: #3dc519;
 
 @import url("https://fonts.googleapis.com/css?family=Lato|Poppins|Kaushan+Script");
 
-body {
-  height: 5000px;
-}
+
 
 .hero {
   margin: 0 auto;
@@ -43,6 +41,8 @@ body {
     &[data-active="true"] {
       position: fixed;
       width: 100%;
+      transition: 0.8s;
+      -webkit-transition:  0.8s;
     }
     .hero-foot--wrapper {
       margin: 7px auto;
