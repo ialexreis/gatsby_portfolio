@@ -1,6 +1,14 @@
 import React from "react"
+import rehypeReact from 'rehype-react'
+import { StaticQuery, graphql } from "gatsby"
 
-const About = () => {
+const renderCustom = new rehypeReact({
+  createElement: React.createElement,
+  components: {},
+}).Compiler;
+
+const html = data => {
+  console.log(data);
   return (
     <div className="section-light about-me" id="about">
       <div class="container">
@@ -11,11 +19,33 @@ const About = () => {
           <div
             class="column is-6 has-vertically-aligned-content"
             data-aos="fade-right"
-          ></div>
+          >
+          {renderCustom(data.markdownRemark.htmlAst)}
+          </div>
         </div>
       </div>
     </div>
   )
 }
+
+const About = () => (
+<StaticQuery
+    query={graphql`
+      {
+        __typename
+        file(relativePath: {eq: "about-me.md"}) {
+          id
+        }
+        markdownRemark {
+          frontmatter {
+            title
+          }
+          htmlAst
+          }
+        }
+    `}
+  render={data => html(data)}
+></StaticQuery>
+)
 
 export default About
