@@ -6,7 +6,7 @@ $primary: #3dc519;
 @import "~bulma/bulma.sass";
 
 @import url("https://fonts.googleapis.com/css?family=Lato|Poppins|Kaushan+Script");
-
+@import url('https://fonts.googleapis.com/css?family=Exo:900&display=swap');
 
 
 .hero {
@@ -38,6 +38,7 @@ $primary: #3dc519;
     height: 50px;
     background: white;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.082);
+    z-index: 10 ;
     &[data-active="true"] {
       position: fixed;
       width: 100%;
@@ -393,5 +394,48 @@ body.preloader-site {
   }
   &:active {
     transform: scale(0.96);
+  }
+}
+.about-me {
+  font-family: 'Exo', sans-serif;
+  .title{
+    font-family: "Kaushan Script", sans-serif;
+  }
+  span{
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -0.125rem;
+      left: -0.5rem;
+      right: -0.5rem;
+      height: 0.75rem;
+
+      // Position the line behind the text so that
+      // it is still easily readable
+      z-index: -1;
+
+      // The SVG is added as an SVG background image
+      background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/664131/underline.svg');
+      background-repeat: no-repeat;
+
+      // This allows the SVG to flex in size to fit
+      // any length of word. If the word is short,
+      // the SVG will be stretched vertically, if it
+      // is long, the SVG will be stretched horizontally.
+      // The jagged nature of this particular SVG works
+      // with this transforming.
+      background-size: cover;
+    }
+  }
+  img{
+    border-radius: 50% 50%;
+    &:after{
+      content: "";
+      width: 100px;
+      height: 100px;
+      background-color: red;
+    }
   }
 }

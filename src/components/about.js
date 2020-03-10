@@ -1,6 +1,7 @@
 import React from "react"
 import rehypeReact from 'rehype-react'
 import { StaticQuery, graphql } from "gatsby"
+import myself from "../utils/img/myself.jpg"
 
 const renderCustom = new rehypeReact({
   createElement: React.createElement,
@@ -16,11 +17,13 @@ const html = data => {
           <h1 class="title has-text-centered section-title">About Me</h1>
         </div>
         <div class="columns is-multiline">
-          <div
-            class="column is-6 has-vertically-aligned-content"
-            data-aos="fade-right"
-          >
+          <div class="column is-6 has-vertically-aligned-content has-text-centered" data-aos="fade-right">
           {renderCustom(data.markdownRemark.htmlAst)}
+          </div>
+          <div className="column is-6 has-vertically-aligned-content has-text-centered" data-aos="fade-right">
+            <figure className="image myself">
+              <img src={myself} alt="Description" />
+            </figure>
           </div>
         </div>
       </div>

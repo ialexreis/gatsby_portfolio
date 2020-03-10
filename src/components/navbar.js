@@ -28,7 +28,7 @@ const Navbar = () => {
           <div className="column is-12 hero-menu-desktop has-text-centered">
             <ul>
               <li className="is-active">
-                <Link to="#">About Me</Link>
+                <Link to="#about">About Me</Link>
               </li>
               <li>
                 <Link to="#">Projects</Link>
