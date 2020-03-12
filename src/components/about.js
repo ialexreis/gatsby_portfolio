@@ -9,7 +9,8 @@ const renderCustom = new rehypeReact({
 }).Compiler;
 
 const html = data => {
-  console.log(data);
+  const imageBackground = { backgroundImage: `url(${myself})` };
+
   return (
     <div className="section-light about-me" id="about">
       <div class="container">
@@ -21,9 +22,7 @@ const html = data => {
           {renderCustom(data.markdownRemark.htmlAst)}
           </div>
           <div className="column is-6 has-vertically-aligned-content has-text-centered" data-aos="fade-right">
-            <figure className="image myself">
-              <img src={myself} alt="Description" />
-            </figure>
+            <div className="image-shadow js-tilt-container" style={imageBackground}></div>
           </div>
         </div>
       </div>
