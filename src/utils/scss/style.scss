@@ -7,6 +7,9 @@ $primary: #3dc519;
 
 @import url("https://fonts.googleapis.com/css?family=Lato|Poppins|Kaushan+Script");
 @import url('https://fonts.googleapis.com/css?family=Exo:900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bellota+Text&display=swap');
+
+@import "icomoon.css";
 
 
 .hero {
@@ -61,6 +64,7 @@ $primary: #3dc519;
             padding-left: 15px;
             a {
               color: #1f2c6c;
+              font-family: 'Bellota Text', cursive;
               &:hover {
                 color: #1f2c6c;
                 transition: all 0.2s ease-in-out;
@@ -397,9 +401,12 @@ body.preloader-site {
   }
 }
 .about-me {
-  font-family: 'Exo', sans-serif;
+  font-family: 'Bellota Text', cursive;
   .title{
     font-family: "Kaushan Script", sans-serif;
+  }
+  p{
+    font-size: 1.2em;
   }
   span{
     position: relative;
@@ -446,4 +453,19 @@ body.preloader-site {
     transform: rotateX(0) rotateY(0);
     transform-style: preserve-3d;
   }
+}
+
+#stack{
+  .is-medium{
+    font-size: 50px;
+    filter: grayscale(1);
+    i{
+      font-size: 50px;
+    }
+    &:hover{
+      font-size: 70px;
+      filter: grayscale(0);
+    }
+  }
+
 }
