@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import Navbar from "../components/navbar"
 import NavbarMobile from "../components/navbar.mobile"
+import Button from "./partials/standard.button"
 import illustration from "../utils/img/hello.png"
 
 const Banner = () => {
@@ -18,13 +19,7 @@ const Banner = () => {
                 <hr/>
                 <h1 className="subtitle profession">Backend Developer</h1>
                 <div className="button-wrap">
-                <Link to="#" className="cta">
-                  <span>Resumé</span>
-                  <svg width="13px" height="10px" viewBox="0 0 13 10">
-                    <path d="M1,5 L11,5"></path>
-                    <polyline points="8 1 12 5 8 9"></polyline>
-                  </svg>
-                </Link>
+                  <Button link="#" text="Resumé"/>
                 </div>
               </div>
               <div className="column is-8 img-bg">

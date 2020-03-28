@@ -31,13 +31,13 @@ const Navbar = () => {
                 <Link to="#about">About Me</Link>
               </li>
               <li>
+                <Link to="#stack">Stack</Link>
+              </li>
+              <li>
                 <Link to="#">Projects</Link>
               </li>
               <li>
                 <Link to="#">Uses</Link>
-              </li>
-              <li>
-                <Link to="#">Stack</Link>
               </li>
               <li>
                 <Link to="#">Contact</Link>
