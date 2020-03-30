@@ -1,15 +1,15 @@
 import React from "react"
-import rehypeReact from 'rehype-react'
+import rehypeReact from "rehype-react"
 import { StaticQuery, graphql } from "gatsby"
-import myself from "../utils/img/myself.jpg"
+import myself from "../utils/img/myself.png"
 
 const renderCustom = new rehypeReact({
   createElement: React.createElement,
   components: {},
-}).Compiler;
+}).Compiler
 
 const html = data => {
-  const imageBackground = { backgroundImage: `url(${myself})` };
+  const imageBackground = { backgroundImage: `url(${myself})` }
 
   return (
     <div className="section-light about-me" id="about">
@@ -18,10 +18,10 @@ const html = data => {
           <h1 class="title has-text-centered section-title">About Me</h1>
         </div>
         <div class="columns is-multiline">
-          <div class="column is-6 has-vertically-aligned-content has-text-centered" data-aos="fade-right">
-          {renderCustom(data.markdownRemark.htmlAst)}
+          <div class="column is-5 has-vertically-aligned-content has-text-centered" data-aos="fade-right">
+            {renderCustom(data.markdownRemark.htmlAst)}
           </div>
-          <div className="column is-6 has-vertically-aligned-content has-text-centered" data-aos="fade-right">
+          <div className="column is-7 has-vertically-aligned-content has-text-centered" data-aos="fade-right">
             <div className="image-shadow js-tilt-container" style={imageBackground}></div>
           </div>
         </div>
@@ -31,7 +31,7 @@ const html = data => {
 }
 
 const About = () => (
-<StaticQuery
+  <StaticQuery
     query={graphql`
       {
         __typename
@@ -46,8 +46,8 @@ const About = () => (
           }
         }
     `}
-  render={data => html(data)}
-></StaticQuery>
+    render={data => html(data)}
+  ></StaticQuery>
 )
 
 export default About

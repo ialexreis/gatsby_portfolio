@@ -1,6 +1,7 @@
 ---
 path: "/"
 title: "About Me"
+label: "is_rigth"
 ---
 
 I'm Alexandre Reis, a 21 years old <span>Backend</span> developer, from Aveiro, a city of Portugal!
@@ -25,3 +26,4 @@ I love to learn new thing and I'm always available to help others to solve probl
 <br>
 I consider myself a <span>funny</span> human being, <span>passionate</span>, <span>committed</span>, and also a <span>fast learner</span>!
  
+

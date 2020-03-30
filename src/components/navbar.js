@@ -1,5 +1,14 @@
 import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
+import styled from "styled-components"
+
+
+
+const UseLink = styled(Link)`
+  border: 2px solid #1f2c6c;
+  padding: 0 10px;
+`
+
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false)
@@ -37,10 +46,10 @@ const Navbar = () => {
                 <Link to="#">Projects</Link>
               </li>
               <li>
-                <Link to="#">Uses</Link>
+                <Link to="#">Contact</Link>
               </li>
               <li>
-                <Link to="#">Contact</Link>
+                <UseLink to="#">Uses</UseLink>
               </li>
             </ul>
           </div>
