@@ -17,7 +17,9 @@ const Projects = () => {
           <ProjectItem title="MotoRent" description="Android and Web App built for a abstract rent-a-veicule company." image={motorentBanner}/>
           <ProjectItem title="Weather App" description="Node.js and Handlebars app for weather forecast." image={weatherBanner}/>
         </div>
-        <Button link="#" text="View More..." is_white="true"/>
+        <div className="box has-text-centered has-margin-top-4">
+          <Button link="#" text="View More..." is_white="true"/>
+        </div>
       </div>
     </div>
   )
