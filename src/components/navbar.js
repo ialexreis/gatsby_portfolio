@@ -43,10 +43,10 @@ const Navbar = () => {
                 <Link to="#stack">Stack</Link>
               </li>
               <li>
-                <Link to="#">Projects</Link>
+                <Link to="#projects">Projects</Link>
               </li>
               <li>
-                <Link to="#">Contact</Link>
+                <Link to="#contact">Contact</Link>
               </li>
               <li>
                 <UseLink to="#">Uses</UseLink>
