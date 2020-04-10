@@ -38,7 +38,7 @@ const Description = styled.p`
 
 const ProjectItem = (props) => {
   return(
-    <div className="column is-medium is-4">
+    <div className="column is-medium is-4 mg-btm">
       <Wrapper>
         <ImageLayer imgObj={{url: props.image}}/>
         <Card>
