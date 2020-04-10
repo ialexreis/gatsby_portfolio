@@ -5,7 +5,7 @@ import Stack from "../components/stack"
 import "../utils/scss/style.scss"
 import Projects from "../components/projects"
 import Contact from "../components/contact"
-import Footer from "../components/footer"
+import Footer from "../components/footer";
 
 export default () => {
     return ( 
