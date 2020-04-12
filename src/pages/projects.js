@@ -5,6 +5,7 @@ import hyundaiBanner from "../utils/img/hyundai-logo.png"
 import { StaticQuery, graphql } from "gatsby"
 import Footer from "../components/footer"
 import BackButton from "../components/partials/back.button"
+import ButtonTop from "../components/partials/scrolltop.button"
 
 const HeroBanner = styled.section`
   background-repeat: no-repeat;
@@ -18,7 +19,7 @@ const html = data => {
   return (
     <div>
       <BackButton/>
-      <HeroBanner className="hero is-large ">
+      <HeroBanner id="hero" className="hero is-large ">
         <div className="hero-body">
           <div className="container">
             <h1 className="title has-text-white">
@@ -39,6 +40,7 @@ const html = data => {
         </div>
       </div>
       <Footer/>
+      <ButtonTop/>
     </div>
   )
 }

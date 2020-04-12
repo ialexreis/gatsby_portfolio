@@ -15,9 +15,6 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false)
 
   useEffect(() => {
-
-
-
     const handleScroll = () => {
       let heroHeight = document.getElementById("hero").offsetHeight
       let heroNavHeight = document.getElementById("nav-foot").offsetHeight

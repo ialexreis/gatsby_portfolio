@@ -6,7 +6,7 @@ $primary: #3dc519;
 $footer-background-color: #fff;
 @import "~bulma/bulma.sass";
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&family=Covered+By+Your+Grace&family=Montserrat&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Damion&display=swap');
 @import "icomoon.css";
 
 
@@ -21,7 +21,7 @@ $footer-background-color: #fff;
   animation: AnimationName 9s ease infinite;
   font-family: 'Montserrat', sans-serif;
   .title {
-    font-family: 'Covered By Your Grace', cursive;
+    font-family:'Damion', cursive;
     transform: rotate(-5deg);
     font-size: 5rem;
     color: whitesmoke;
@@ -82,6 +82,7 @@ $footer-background-color: #fff;
               text-transform: lowercase;
               color: #1f2c6c;
               font-weight: 100;
+              font-size: 16px;
             }
           }
         }
@@ -557,5 +558,11 @@ body.preloader-site {
     &:after{
       background-image: none;
     }
+  }
+}
+
+.layout-wrapper{
+  button[class^="scrolltopbutton"][data-active="true"]{
+    visibility: visible;
   }
 }

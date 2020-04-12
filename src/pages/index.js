@@ -6,6 +6,9 @@ import "../utils/scss/style.scss"
 import Projects from "../components/projects"
 import Contact from "../components/contact"
 import Footer from "../components/footer";
+import ButtonTop from "../components/partials/scrolltop.button"
+
+
 
 export default () => {
     return ( 
@@ -18,6 +21,7 @@ export default () => {
                 <Contact/>
             </div>
             <Footer/>
+            <ButtonTop/>
         </div>
     ) 
 }
