@@ -15,7 +15,6 @@ const ProjectImage = styled.div`
 
 
 const ImageLayer = ({ imgObj }) => {
-  console.log(imgObj)
   return (
     <ProjectImage imgObj={imgObj}/>
   )

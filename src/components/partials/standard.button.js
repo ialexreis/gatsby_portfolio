@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 
 const Button = (props) => {
   return (
-    <Link to={props.link} className={"cta" + (props.is_white ? " has-title-color" : "" )} >
+    <Link id="view_more" to={props.link} className={"cta" + (props.is_white ? " has-title-color" : "" )} >
       <span>{props.text}</span>
         <svg width="13px" height="10px" viewBox="0 0 13 10">
           <path d="M1,5 L11,5"></path>

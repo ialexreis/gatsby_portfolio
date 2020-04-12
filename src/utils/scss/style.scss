@@ -60,7 +60,11 @@ $footer-background-color: #fff;
             display: inline-block;
             padding-right: 15px;
             padding-left: 15px;
-            a {
+            button {
+              background: none;
+              border: none;
+              cursor: pointer;
+              text-transform: lowercase;
               color: #1f2c6c;
               font-family: 'Montserrat', sans-serif;
               font-weight: 100;
@@ -69,11 +73,15 @@ $footer-background-color: #fff;
                 transition: all 0.2s ease-in-out;
                 border-bottom: 2px solid #1f2c6c;
               }
+              &:focus{
+                border-bottom: 2px solid #1f2c6c;
+              }
             }
-          }
-          li.is-active {
-            a {
-              border-bottom: 2px solid #1f2c6c;
+            a{
+              cursor: pointer;
+              text-transform: lowercase;
+              color: #1f2c6c;
+              font-weight: 100;
             }
           }
         }
@@ -178,7 +186,7 @@ html {
     }
   }
   .section-light {
-    padding: 30px;
+    padding: 50px;
   }
   .section-light.about-me {
     padding-bottom: 100px;
@@ -463,6 +471,7 @@ body.preloader-site {
   -webkit-box-shadow: 0px 2px 57px -1px rgba(0, 0, 0, 0.23);
   -moz-box-shadow: 0px 2px 57px -1px rgba(0, 0, 0, 0.23);
   box-shadow: 0px 2px 57px -1px rgba(0, 0, 0, 0.23);
+  max-height: 290px;
   .is-medium{
     font-size: 50px;
     filter: grayscale(1);
@@ -511,7 +520,6 @@ body.preloader-site {
             transition: all 20ms;
             background: linear-gradient(17deg, #2a81de, #dbd1df, #3ad5d7, #3dc519);
             color: white;
-            font-size: 40px;
           }
         }
       }
@@ -542,4 +550,12 @@ body.preloader-site {
 .icon-gold{
   color: gold;
   margin-right: 7px;
+}
+
+#view_more{
+  span{
+    &:after{
+      background-image: none;
+    }
+  }
 }
