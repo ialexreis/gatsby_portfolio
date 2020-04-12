@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
+import scrollTo from 'gatsby-plugin-smoothscroll';
 
 
 
@@ -14,7 +15,9 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false)
 
   useEffect(() => {
-  
+
+
+
     const handleScroll = () => {
       let heroHeight = document.getElementById("hero").offsetHeight
       let heroNavHeight = document.getElementById("nav-foot").offsetHeight
@@ -22,7 +25,7 @@ const Navbar = () => {
       if (isScrolled !== scrolled) {
         setScrolled(!scrolled)
       }
-    }
+   }
 
     document.addEventListener("scroll", handleScroll, { passive: true })
     return () => {
@@ -37,16 +40,16 @@ const Navbar = () => {
           <div className="column is-12 hero-menu-desktop has-text-centered">
             <ul>
               <li className="is-active">
-                <Link to="#about">About Me</Link>
+                <button onClick={() => scrollTo('#about')} >About Me</button>
               </li>
               <li>
-                <Link to="#stack">Stack</Link>
+                <button onClick={() => scrollTo('#stack')}>Stack</button>
               </li>
               <li>
-                <Link to="#projects">Projects</Link>
+                <button onClick={() => scrollTo('#projects')}>Projects</button>
               </li>
               <li>
-                <Link to="#contact">Contact</Link>
+                <button onClick={() => scrollTo('#contact')}>Contact</button>
               </li>
               <li>
                 <UseLink to="#">Uses</UseLink>
