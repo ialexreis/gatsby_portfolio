@@ -7,6 +7,7 @@ $footer-background-color: #fff;
 @import "~bulma/bulma.sass";
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&family=Covered+By+Your+Grace&family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Damion&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Miriam+Libre&display=swap');
 @import "icomoon.css";
 
 
@@ -19,7 +20,7 @@ $footer-background-color: #fff;
   -webkit-animation: AnimationName 9s ease infinite;
   -moz-animation: AnimationName 9s ease infinite;
   animation: AnimationName 9s ease infinite;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Miriam Libre', 'Merriweather Sans';
   .title {
     font-family:'Damion', cursive;
     transform: rotate(-5deg);
@@ -66,7 +67,7 @@ $footer-background-color: #fff;
               cursor: pointer;
               text-transform: lowercase;
               color: #1f2c6c;
-              font-family: 'Montserrat', sans-serif;
+              font-family: 'Miriam Libre', 'Merriweather Sans';
               font-weight: 100;
               &:hover {
                 color: #1f2c6c;
@@ -133,7 +134,7 @@ $footer-background-color: #fff;
   box-sizing: border-box;
 }
 html {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Miriam Libre', 'Merriweather Sans';
   width: 100%;
   min-height: 100%;
 }
@@ -144,7 +145,7 @@ html {
 .main-content {
   padding-top: 2rem;
   color: #3c4172;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Miriam Libre', 'Merriweather Sans';
   .section-dark {
     background-color: #f0f3f5;
     padding: 60px 0px;
@@ -217,7 +218,7 @@ html {
       height: 50px;
       font-size: 1.1rem;
       text-transform: uppercase;
-      font-family: 'Montserrat', sans-serif;
+      font-family: 'Miriam Libre', 'Merriweather Sans';
     }
   }
   .section-color.services {
@@ -411,7 +412,7 @@ body.preloader-site {
   }
 }
 .about-me {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Miriam Libre', 'Merriweather Sans';
   .title{
     font-family: "Baloo 2", cursive;
   }
