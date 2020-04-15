@@ -13,6 +13,8 @@ const ContactWrapper = styled.div`
 `
 
 const IconLink = styled.a`
+  width: 50px;
+  height: 50px;
   border: 2px solid linear-gradient(17deg, #2a81de, #dbd1df, #3ad5d7, #3dc519);
   padding: 10px;
   font-size: 30px;
