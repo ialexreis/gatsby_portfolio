@@ -4,6 +4,7 @@ import Navbar from "../components/navbar"
 import NavbarMobile from "../components/navbar.mobile"
 import Button from "./partials/standard.button"
 import illustration from "../utils/img/hello.png"
+import ReactTypingEffect from 'react-typing-effect';
 
 const Banner = () => {
   return (
@@ -17,7 +18,9 @@ const Banner = () => {
                 <h1 className="subtitle">Hey there, I'm</h1>
                 <h2 className="title">Alexandre</h2>
                 <hr/>
-                <h1 className="subtitle profession">Backend Developer</h1>
+                <h1 className="subtitle profession">
+                  <ReactTypingEffect
+                  text={['Backend Developer', 'Biker']} /></h1>
                 <div className="button-wrap">
                   <Button link="#" text="Resumé"/>
                 </div>

@@ -27,6 +27,8 @@ const PlayIcon = styled.a`
     height: 100%;
 `
 
+
+// se existir video colocar o react-modal-video
 const ImageLayer = ({ imgObj }) => {
   return (
     <ProjectImage imgObj={imgObj}>

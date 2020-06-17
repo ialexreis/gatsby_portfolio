@@ -13,7 +13,7 @@ const ContactWrapper = styled.div`
 `
 
 const IconLink = styled.a`
-  width: 50px;
+  width: 50px;  
   height: 50px;
   border: 2px solid linear-gradient(17deg, #2a81de, #dbd1df, #3ad5d7, #3dc519);
   padding: 10px;
@@ -36,7 +36,7 @@ const Contact = () => {
                 <ul>
                   <li>
                     <IconLink target="_blank"  href="https://github.com/adevr"><FontAwesomeIcon icon={faGithub}/></IconLink>
-                  </li>
+                  </li> 
                   <li>
                     <IconLink target="_blank"  href="https://www.linkedin.com/in/alexandre-reis-dev/"><FontAwesomeIcon icon={faLinkedin}/></IconLink>
                   </li>
