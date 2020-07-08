@@ -34,11 +34,7 @@ const About = () => (
   <StaticQuery
     query={graphql`
       {
-        __typename
-        file(relativePath: {eq: "about-me.md"}) {
-          id
-        }
-        markdownRemark {
+       markdownRemark(fileAbsolutePath: {regex: "/about-me.md/"}, frontmatter: {}) {
           frontmatter {
             title
           }

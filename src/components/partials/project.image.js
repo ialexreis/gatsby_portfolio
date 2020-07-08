@@ -2,13 +2,12 @@ import React from "react"
 import styled from "styled-components"
 import {faPlayCircle} from "@fortawesome/free-regular-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import Img from 'gatsby-image';
 
-
-const ProjectImage = styled.div`
-  position: absolute;
+const ProjectImage = styled(Img)`
+  position: absolute !important;
   width: 25%;
   height: 255px;
-  background: ${props => `url('${props.imgObj.url}');`}
   background-size: cover;
   filter: blur(4px);
   border-radius: 20px;
@@ -31,7 +30,7 @@ const PlayIcon = styled.a`
 // se existir video colocar o react-modal-video
 const ImageLayer = ({ imgObj }) => {
   return (
-    <ProjectImage imgObj={imgObj}>
+    <ProjectImage fluid={imgObj}>
         <PlayIcon><FontAwesomeIcon icon={faPlayCircle}/></PlayIcon>
     </ProjectImage>
   )

@@ -568,3 +568,18 @@ body.preloader-site {
   }
 }
 
+.title {
+  font-family:'Damion', cursive;
+  transform: rotate(-5deg);
+  font-size: 5rem;
+  color: black;
+}
+
+footer{
+  .title {
+    font-family:'Damion', cursive;
+    transform: rotate(-5deg);
+    font-size: 5rem;
+    color: black;
+  }
+}

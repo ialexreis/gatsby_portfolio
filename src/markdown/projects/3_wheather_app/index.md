@@ -1,9 +1,8 @@
 ---
-title: 'Motorent'
-live: ''
-source: ''
-stack: 'Vanilla PHP, Java'
-image: 'motorent.png'
+title: 'Weather Application'
+live: 'https://node-weather-app-js.herokuapp.com/'
+source: 'https://github.com/adevr/weather-app'
+stack: 'Node.js, Handlebars'
+image: 'weather.png'
+description: 'A simple weather forecast application built with Node.js and Handlebars. Currently using MapBox and DarkSky APIs' 
 ---
-
-A simple application that simulate the main tasks of a rent-a-car company on a daily basis.

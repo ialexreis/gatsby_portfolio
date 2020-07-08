@@ -11,7 +11,8 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="content has-text-centered">
-        <img src={signature} alt="Alexandre Reis"/><br/>
+        {/*<img src={signature} alt="Alexandre Reis"/><br/>*/}
+        <h2 className="title">Alexandre</h2><br/>
         <CopyRef>COPYRIGHT © 2020, ALEXANDRE REIS</CopyRef>
       </div>
     </footer>

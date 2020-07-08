@@ -1,6 +1,10 @@
 import React from "react"
 import ImageLayer from "./project.image"
 import styled from "styled-components"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faGithub } from "@fortawesome/free-brands-svg-icons"
+import { faLink } from '@fortawesome/free-solid-svg-icons';
+
 
 
 const Wrapper = styled.div`
@@ -30,20 +34,62 @@ const Title = styled.h1`
   font-family: "Baloo 2", cursive;
 `
 
+const Tags = styled.div`
+  position: absolute;
+  top: 47%;
+  padding: 0 50px;
+`
+
 const Description = styled.p`
   position: absolute;
-  top: 50%;
+  top: 55%;
   padding: 0 50px;
+`
+
+const Social = styled.div`
+  position: absolute;
+  top: 85%;
+  right: 10%;
+`
+
+const SocialIcon = styled.a`
+  width: 150px;
+  height: 100px;
+  border-radius: 50%;
+  font-size: 30px;
+  color: #4a4a4a;
+  padding: 10px 15px;
+  &:hover {
+    -webkit-box-shadow: 0px -1px 19px 0px rgba(0,0,0,0.41);
+    -moz-box-shadow: 0px -1px 19px 0px rgba(0,0,0,0.41);
+    box-shadow: 0px -1px 19px 0px rgba(0,0,0,0.41);
+  }
 `
 
 const ProjectItem = (props) => {
   return(
-    <div className="column is-medium is-4 mg-btm">
+    <div className="column is-medium is-4 mg-btm project-item">
       <Wrapper>
-        <ImageLayer imgObj={{url: props.image}}/>
+        <ImageLayer imgObj={props.info.image.childImageSharp.fluid}/>
         <Card>
-          <Title>{props.title}</Title>
-          <Description>{props.description}</Description>
+          <Title>{props.info.title}</Title>
+          <Tags className="tags">
+          {props.info.stack.split(",").map(value => (
+            <span className="tag is-light mr-6" key={value}>{value}</span>
+          ))}
+          </Tags>
+          <br/>
+          <Description>
+            {props.info.description}
+          </Description>
+          <Social>
+          {props.info.live != null &&
+              <SocialIcon target="_blank" href={props.info.live}><FontAwesomeIcon icon={faLink} /></SocialIcon>
+          }
+          {props.info.source != null &&
+            <SocialIcon target="_blank" href={props.info.source}><FontAwesomeIcon icon={faGithub} /></SocialIcon>
+          }
+          </Social>
         </Card>
       </Wrapper>
   </div>

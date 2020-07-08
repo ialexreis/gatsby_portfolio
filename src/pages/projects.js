@@ -1,7 +1,7 @@
 import React from "react"
+import "../utils/scss/style.scss"
 import styled from "styled-components"
 import ProjectItem from "../components/partials/project.item"
-import hyundaiBanner from "../utils/img/hyundai-logo.png"
 import { StaticQuery, graphql } from "gatsby"
 import Footer from "../components/footer"
 import BackButton from "../components/partials/back.button"
@@ -32,9 +32,7 @@ const html = data => {
         <div className="columns is-multiline">
           {items.edges.map(item => (
             <ProjectItem
-              title={item.node.childMarkdownRemark.frontmatter.title}
-              description={item.node.childMarkdownRemark.html}
-              image={hyundaiBanner}
+              info={item.node.childMarkdownRemark.frontmatter}
             />
           ))}
         </div>
@@ -59,7 +57,14 @@ const Projects = () => (
                   live
                   source
                   stack
-                  image
+                  image {
+                    childImageSharp {
+                      fluid(maxWidth: 800, quality: 80) {
+                        ...GatsbyImageSharpFluid
+                      }
+                    }
+                  }
+                  description
                 }
                 html
               }
