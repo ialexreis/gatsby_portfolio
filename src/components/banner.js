@@ -25,7 +25,7 @@ const Banner = () => {
                   <Button link="#" text="Resumé"/>
                 </div>
               </div>
-              <div className="column is-8 img-bg">
+              <div className="column is-7 is-two-thirds is-two-fifths-tablet img-bg">
                 <figure className="image ">
                   <img src={illustration} alt="Description" />
                 </figure>

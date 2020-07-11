@@ -68,7 +68,7 @@ const SocialIcon = styled.a`
 
 const ProjectItem = (props) => {
   return(
-    <div className="column is-medium is-4 mg-btm project-item">
+    <div className="column is-medium is-one-third is-full-mobile is-full-tablet mg-btm project-item">
       <Wrapper>
         <ImageLayer imgObj={props.info.image.childImageSharp.fluid}/>
         <Card>

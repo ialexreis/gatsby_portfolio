@@ -6,7 +6,7 @@ import { graphql, StaticQuery } from "gatsby"
 const html = data => {
   let items = data.allFile
   return (
-    <div className="section-light about-me" id="projects">
+    <div className="section-light projects-pd about-me" id="projects">
       <div className="container">
         <div className="column is-12 about-me">
           <h1 className="title has-text-centered section-title">Projects</h1>
