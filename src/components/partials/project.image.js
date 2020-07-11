@@ -9,7 +9,10 @@ const ProjectImage = styled(Img)`
   width: 25%;
   height: 255px;
   background-size: cover;
-  filter: blur(4px);
+  -webkit-box-shadow: 0px -1px 19px 0px rgba(0,0,0,0.41);
+  -moz-box-shadow: 0px -1px 19px 0px rgba(0,0,0,0.41);
+  box-shadow: 0px -1px 19px 0px rgba(0,0,0,0.41);
+  filter:blur(1px);
   border-radius: 20px;
   z-index: 1;
 `

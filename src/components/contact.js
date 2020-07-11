@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import illustration from "../utils/img/300.png"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
-import { faGithub, faLinkedin, faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons"
+import { faGithub, faLinkedin, faFacebook, faInstagram, faDev } from "@fortawesome/free-brands-svg-icons"
 import {Link} from "gatsby"
 
 
@@ -32,11 +32,14 @@ const Contact = () => {
               <div className="column is-three-fifths is-offset-one-fifth landing-caption">
                 <h1 className="title">Contact Me</h1>
                 <h3>If you want to <span>talk</span>, you can <span>find me</span> at:</h3><br/><br/>
-                <h2><Link to="mailto:alex.cst.reis@gmail.com">alex.cst.reis@gmail.com</Link></h2>
+                <h2><a href="mailto:alex.cst.reis@gmail.com">alex.cst.reis@gmail.com</a></h2>
                 <ul>
                   <li>
                     <IconLink target="_blank"  href="https://github.com/adevr"><FontAwesomeIcon icon={faGithub}/></IconLink>
                   </li> 
+                  <li>
+                    <IconLink target="_blank" href="https://dev.to/adevr"><FontAwesomeIcon icon={faDev} /></IconLink>
+                  </li>
                   <li>
                     <IconLink target="_blank"  href="https://www.linkedin.com/in/alexandre-reis-dev/"><FontAwesomeIcon icon={faLinkedin}/></IconLink>
                   </li>
