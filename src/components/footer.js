@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import signature from "../utils/img/signature.png"
 
 const CopyRef = styled.b`
   color: #151515;

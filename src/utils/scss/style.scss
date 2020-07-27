@@ -4,6 +4,7 @@ $title-color: #ff0000;
 $color: #111;
 $primary: #3dc519;
 $footer-background-color: #fff;
+$breakpoint-tablet: 768px;
 @import "~bulma/bulma.sass";
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&family=Covered+By+Your+Grace&family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Damion&display=swap');
@@ -591,5 +592,26 @@ footer{
 @media only screen and (max-width: 993px){
   .projects-pd {
       padding: 50px 5px !important;
+  }
+}
+
+
+@media (max-width: $breakpoint-tablet) {
+  .is-12-mobile{
+    .title{
+      font-size: 4rem;
+    }
+  }
+
+  .is-narrow-mobile{
+    .gatsby-image-wrapper{
+      width: 85%;
+    }
+    h1{
+      font-size: 23px;
+    }
+    p[class^=projectitem__Description]{
+      top: 60% !important;
+    }
   }
 }

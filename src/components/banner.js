@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import Navbar from "../components/navbar"
 import NavbarMobile from "../components/navbar.mobile"
 import Button from "./partials/standard.button"
@@ -14,7 +13,7 @@ const Banner = () => {
         <div className="hero-body">
           <div className="container has-text-centered">
             <div className="columns is-vcentered">
-              <div className="column is-4 is-offset-1 landing-caption">
+              <div className="column is-4 is-12-mobile landing-caption">
                 <h1 className="subtitle">Hey there, I'm</h1>
                 <h2 className="title">Alexandre</h2>
                 <hr/>
@@ -25,7 +24,7 @@ const Banner = () => {
                   <Button link="#" text="Resumé"/>
                 </div>
               </div>
-              <div className="column is-7 is-two-thirds is-two-fifths-tablet img-bg">
+              <div className="column is-7 is-two-thirds is-two-fifths-tablet is-11-mobile img-bg">
                 <figure className="image ">
                   <img src={illustration} alt="Description" />
                 </figure>

@@ -10,12 +10,12 @@ const html = data => {
       <div className="container">
         <div className="column is-12 about-me">
           <h1 className="title has-text-centered section-title">Projects</h1>
-
         </div>
         <div className="columns">
           {items.edges.map(item => (
             <ProjectItem
               info={item.node.childMarkdownRemark.frontmatter}
+              key={item.node.childMarkdownRemark.frontmatter.title}
             />
           ))}
         </div>

@@ -1,9 +1,7 @@
 import React from "react"
 import styled from "styled-components"
-import illustration from "../utils/img/300.png"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import { faGithub, faLinkedin, faFacebook, faInstagram, faDev } from "@fortawesome/free-brands-svg-icons"
-import {Link} from "gatsby"
 
 
 const ContactWrapper = styled.div`
@@ -36,7 +34,7 @@ const Contact = () => {
                 <ul>
                   <li>
                     <IconLink target="_blank"  href="https://github.com/adevr"><FontAwesomeIcon icon={faGithub}/></IconLink>
-                  </li> 
+                  </li>
                   <li>
                     <IconLink target="_blank" href="https://dev.to/adevr"><FontAwesomeIcon icon={faDev} /></IconLink>
                   </li>
