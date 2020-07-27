@@ -22,7 +22,7 @@ const html = data => {
             {renderCustom(data.markdownRemark.htmlAst)}
           </div>
           <div className="column is-7 is-hidden-touch has-vertically-aligned-content has-text-centered" data-aos="fade-right">
-            <div className="image-shadow js-tilt-container" style={imageBackground}></div>
+            <div className="image-shadow js-tilt-container" style={imageBackground}/>
           </div>
         </div>
       </div>

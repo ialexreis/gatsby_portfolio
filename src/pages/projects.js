@@ -21,7 +21,7 @@ const html = data => {
       <BackButton/>
       <HeroBanner id="hero" className="hero is-large ">
         <div className="hero-body">
-          <div className="container">
+          <div className="container" id="projects-page">
             <h1 className="title has-text-white">
               Projects
             </h1>
@@ -33,6 +33,7 @@ const html = data => {
           {items.edges.map(item => (
             <ProjectItem
               info={item.node.childMarkdownRemark.frontmatter}
+              key={item.node.childMarkdownRemark.frontmatter.title}
             />
           ))}
         </div>
