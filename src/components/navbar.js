@@ -51,7 +51,7 @@ const Navbar = () => {
                 <button onClick={() => scrollTo('#contact')}>Contact</button>
               </li>
               <li>
-                <UseLink to="#">Uses</UseLink>
+                <UseLink to="/uses">Uses</UseLink>
               </li>
             </ul>
           </div>

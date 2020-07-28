@@ -1,7 +1,7 @@
 import React from "react"
 import rehypeReact from "rehype-react"
 import { StaticQuery, graphql } from "gatsby"
-import myself from "../utils/img/myself2.png"
+import myself from "../utils/imagens/myself2.png"
 
 const renderCustom = new rehypeReact({
   createElement: React.createElement,

@@ -6,6 +6,8 @@ import { StaticQuery, graphql } from "gatsby"
 import Footer from "../components/footer"
 import BackButton from "../components/partials/back.button"
 import ButtonTop from "../components/partials/scrolltop.button"
+import Helmet from "react-helmet"
+import favicon from "../utils/imagens/favicon.ico"
 
 const HeroBanner = styled.section`
   background-repeat: no-repeat;
@@ -18,6 +20,27 @@ const html = data => {
   let items = data.allFile
   return (
     <div>
+      <Helmet>
+        <title>Alexandre Reis</title>
+        <meta name="description" content="Alexandre Reis - Projects" />
+        <link rel="icon" href={favicon} />
+        <script type="application/ld+json">
+          {`
+              {
+                "@context": "https://schema.org/",
+                "@type": "Person",
+                "name": "Alexandre Reis",
+                "url": "https://alexandreis.me/projects",
+                "image": "",
+                "sameAs": "http://alexandreis.me/projects",
+                "jobTitle": "Backend Developer",
+                "worksFor": {
+                "@type": "Organization",
+                "name": "LOBA"
+              }
+              `}
+        </script>
+      </Helmet>
       <BackButton/>
       <HeroBanner id="hero" className="hero is-large ">
         <div className="hero-body">

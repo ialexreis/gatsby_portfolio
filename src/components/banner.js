@@ -1,9 +1,10 @@
 import React from "react"
 import Navbar from "../components/navbar"
 import NavbarMobile from "../components/navbar.mobile"
-import Button from "./partials/standard.button"
-import illustration from "../utils/img/hello.png"
+import illustration from "../utils/imagens/hello.png"
 import Loadable from "@loadable/component"
+import cv from "../utils/resume/alexandreReis.pdf"
+
 
 const LoadableTypewriter = Loadable(() =>
   import("../components/partials/typing.effect")
@@ -25,7 +26,13 @@ const Banner = () => {
                   <LoadableTypewriter />
                   </h1>
                 <div className="button-wrap">
-                  <Button link="#" text="Resumé"/>
+                  <a id="view_more" href={cv} className="cta has-title-color" target="_blank">
+                    <span>Resumé</span>
+                    <svg width="13px" height="10px" viewBox="0 0 13 10">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
                 </div>
               </div>
               <div className="column is-6-desktop  is-7 is-two-thirds is-two-fifths-tablet is-11-mobile img-bg">

@@ -470,6 +470,32 @@ body.preloader-site {
   }
 }
 
+#uses{
+  font-family: 'Miriam Libre', 'Merriweather Sans';
+   p{
+    font-size: .9em;
+    margin: 50px;
+  }
+  span{
+    position: relative;
+    font-size: 30px;
+    font-family: "Baloo 2", cursive;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -0.125rem;
+      left: -0.5rem;
+      right: -0.5rem;
+      height: 0.75rem;
+      z-index: -1;
+      background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/664131/underline.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
 #stack{
   /*box-shadow: inset 0 3px 3px 6px rgba(0, 0, 0, 0.16), 0 3px 3px 6px rgba(0, 0, 0, 0.23)*/
   -webkit-box-shadow: 0px 2px 57px -1px rgba(0, 0, 0, 0.23);

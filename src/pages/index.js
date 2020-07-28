@@ -7,12 +7,35 @@ import Projects from "../components/projects"
 import Contact from "../components/contact"
 import Footer from "../components/footer";
 import ButtonTop from "../components/partials/scrolltop.button"
+import Helmet from "react-helmet"
+import favicon from "../utils/imagens/favicon.ico"
 
 
 
 export default () => {
-    return ( 
+    return (
         <div className="layout-wrapper">
+          <Helmet>
+            <title>Alexandre Reis</title>
+            <meta name="description" content="Alexandre Reis Personal Website" />
+            <link rel="icon" href={favicon} />
+            <script type="application/ld+json">
+              {`
+              {
+                "@context": "https://schema.org/",
+                "@type": "Person",
+                "name": "Alexandre Reis",
+                "url": "https://alexandreis.me/",
+                "image": "",
+                "sameAs": "http://alexandreis.me/",
+                "jobTitle": "Backend Developer",
+                "worksFor": {
+                "@type": "Organization",
+                "name": "LOBA"
+              }
+              `}
+            </script>
+          </Helmet>
             <Banner />
             <div className="main-content">
                 <About />
@@ -23,5 +46,5 @@ export default () => {
             <Footer/>
             <ButtonTop/>
         </div>
-    ) 
+    )
 }

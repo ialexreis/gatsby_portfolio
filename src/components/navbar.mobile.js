@@ -47,7 +47,7 @@ const NavbarMobile = () => {
             <MobileButton className="navbar-item" onClick={() => scrollTo('#contact')}>Contact</MobileButton>
             </div>
             <div className="navbar-item">
-            <a className="navbar-item" href="#">
+            <a className="navbar-item" href="/uses">
                 Uses
             </a>
             </div>
