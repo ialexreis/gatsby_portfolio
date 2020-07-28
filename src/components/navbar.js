@@ -16,11 +16,13 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      let heroHeight = document.getElementById("hero").offsetHeight
-      let heroNavHeight = document.getElementById("nav-foot").offsetHeight
-      const isScrolled = window.  scrollY > (heroHeight - heroNavHeight)
-      if (isScrolled !== scrolled) {
-        setScrolled(!scrolled)
+      if (typeof window !== `undefined`) {
+        let heroHeight = document.getElementById("hero").offsetHeight
+        let heroNavHeight = document.getElementById("nav-foot").offsetHeight
+        const isScrolled = window.scrollY > (heroHeight - heroNavHeight)
+        if (isScrolled !== scrolled) {
+          setScrolled(!scrolled)
+        }
       }
    }
 
