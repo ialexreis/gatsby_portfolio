@@ -28,10 +28,10 @@ export default () => {
                 "url": "https://alexandreis.me/",
                 "image": "",
                 "sameAs": "http://alexandreis.me/",
-                "jobTitle": "Backend Developer",
+                "jobTitle": "Backend Engineer",
                 "worksFor": {
                 "@type": "Organization",
-                "name": "LOBA"
+                "name": "7EGEND"
               }
               `}
             </script>

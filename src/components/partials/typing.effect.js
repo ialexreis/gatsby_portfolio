@@ -4,7 +4,7 @@ import ReactTypingEffect from 'react-typing-effect';
 
 const TypingEffect = () => {
   return <ReactTypingEffect
-    text={['Backend Developer', 'Biker']} />
+    text={['Backend Engineer', 'Hobbyist Game Dev', 'Biker']} />
 }
 
 export default TypingEffect;
