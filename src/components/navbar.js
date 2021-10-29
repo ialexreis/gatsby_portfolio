@@ -1,14 +1,8 @@
 import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
-import styled from "styled-components"
 import scrollTo from 'gatsby-plugin-smoothscroll';
 
 
-
-const UseLink = styled(Link)`
-  border: 2px solid #1f2c6c;
-  padding: 0 10px;
-`
 
 
 const Navbar = () => {
@@ -51,7 +45,7 @@ const Navbar = () => {
                 <button onClick={() => scrollTo('#contact')}>Contact</button>
               </li>
               <li>
-                <UseLink to="/uses">Uses</UseLink>
+                <Link to="/uses">Uses</Link>
               </li>
             </ul>
           </div>

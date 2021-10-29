@@ -53,6 +53,7 @@ const html = data => {
       </HeroBanner>
       <div className="container">
         <div className="columns is-multiline">
+
           {items.edges.map(item => (
             <ProjectItem
               info={item.node.childMarkdownRemark.frontmatter}

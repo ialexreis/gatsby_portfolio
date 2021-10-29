@@ -5,16 +5,21 @@ $color: #111;
 $primary: #3dc519;
 $footer-background-color: #fff;
 $breakpoint-tablet: 768px;
-@import "~bulma/bulma.sass";
+@import '~bulma/css/bulma.css';
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Noto+Serif+Display:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap');
 @import "icomoon.css";
+
+$spacing-shortcuts: ("margin": "mg");
+$spacing-horizontal: null;
+$spacing-vertical: "t";
+$spacing-values: ("small": 10px, "medium": 30px, "large": 10rem);
 
 
 .hero {
   margin: 0 auto;
   background: #def2f1;
   background-size: 600% 600%;
-  box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 
   -webkit-animation: AnimationName 9s ease infinite;
   -moz-animation: AnimationName 9s ease infinite;
@@ -38,7 +43,7 @@ $breakpoint-tablet: 768px;
   }
   .hero-foot {
     height: 50px;
-    background: white;
+    background: #def2f1;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.082);
     z-index: 10 ;
     &[data-active="true"] {
@@ -105,14 +110,12 @@ html {
   width: 100%;
   min-height: 100%;
 }
-.header-wrapper {
-  padding-bottom: 30px;
-}
 
 .main-content {
   padding-top: 2rem;
   color: #3c4172;
   font-family: 'Noto Serif Display', serif;
+  background-color: #def2f1;
   .section-dark {
     background-color: #f0f3f5;
     padding: 60px 0px;
@@ -381,7 +384,7 @@ body.preloader-site {
 .about-me {
   font-family: 'Noto Serif Display', serif;
   .title{
-    font-family: "Baloo 2", cursive;
+    font-family: 'Days One', sans-serif;
   }
   p{
     font-size: .9em;
@@ -398,6 +401,7 @@ body.preloader-site {
       height: 0.75rem;
       z-index: -1;
       background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/664131/underline.svg');
+      filter: grayscale(100%);
       background-repeat: no-repeat;
       background-size: cover;
     }
@@ -419,21 +423,10 @@ body.preloader-site {
 
   .image-shadow {
     margin: 20px auto;
-    width: 620px;
-    height: 700px;
-    border-radius: 10px;
-    display: block;
-    background-size: cover;
-    bottom: -107px;
-    border: 12px inset rgba(176, 176, 174, 0.1);
-    border-radius: 40px 40px 0px 40px;
+    width: 500px;
+    height: 500px;
   }
 
-  .js-tilt-container {
-    transition: transform .1s ease;
-    transform: rotateX(0) rotateY(0);
-    transform-style: preserve-3d;
-  }
 }
 
 #uses{
@@ -463,11 +456,7 @@ body.preloader-site {
 }
 
 #stack{
-  /*box-shadow: inset 0 3px 3px 6px rgba(0, 0, 0, 0.16), 0 3px 3px 6px rgba(0, 0, 0, 0.23)*/
-  -webkit-box-shadow: 0px 2px 57px -1px rgba(0, 0, 0, 0.23);
-  -moz-box-shadow: 0px 2px 57px -1px rgba(0, 0, 0, 0.23);
-  box-shadow: 0px 2px 57px -1px rgba(0, 0, 0, 0.23);
-  max-height: 290px;
+
   .is-medium{
     font-size: 50px;
     filter: grayscale(1);
@@ -563,16 +552,14 @@ body.preloader-site {
 }
 
 .title {
-  font-family:'Damion', cursive;
-  transform: rotate(-5deg);
+  font-family:'Days One', sans-serif;
   font-size: 5rem;
   color: black;
 }
 
 footer{
   .title {
-    font-family:'Damion', cursive;
-    transform: rotate(-5deg);
+    font-family:'Days One', sans-serif;
     font-size: 5rem;
     color: black;
   }
@@ -662,7 +649,6 @@ footer{
   height: 8px;
   border-top: 2px solid #b91a2f;
   border-right: 2px solid #b91a2f;
-  behavior: url(-ms-transform.htc);
   -moz-transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
   -o-transform: rotate(135deg);
@@ -867,3 +853,55 @@ footer{
     transform: scale(1, 0);
   }
 }
+
+
+.arrows{
+  width: 60px;
+  height: 72px;
+
+  path {
+    stroke: black;
+    fill: transparent;
+    stroke-width: 1px;
+    animation: arrow 2s infinite;
+    -webkit-animation: arrow 2s infinite;
+  }
+
+  @keyframes arrow
+  {
+    0% {opacity:0}
+    40% {opacity:1}
+    80% {opacity:0}
+    100% {opacity:0}
+  }
+
+  @-webkit-keyframes arrow /*Safari and Chrome*/
+  {
+    0% {opacity:0}
+    40% {opacity:1}
+    80% {opacity:0}
+    100% {opacity:0}
+  }
+
+  path.a1 {
+    animation-delay:-1s;
+    -webkit-animation-delay:-1s; /* Safari 和 Chrome */
+    -moz-animation-delay:-1s; /* Safari 和 Chrome */
+    -o-animation-delay:-1s; /* Safari 和 Chrome */
+  }
+
+  path.a2 {
+    animation-delay:-0.5s;
+    -webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+    -moz-animation-delay:-0.5s; /* Safari 和 Chrome */
+    -o-animation-delay:-0.5s; /* Safari 和 Chrome */
+  }
+
+  path.a3 {
+    animation-delay:0s;
+    -webkit-animation-delay:0s; /* Safari 和 Chrome */
+    -moz-animation-delay:0s; /* Safari 和 Chrome */
+    -o-animation-delay:0s; /* Safari 和 Chrome */
+  }
+}
+
