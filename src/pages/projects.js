@@ -36,7 +36,7 @@ const html = data => {
                 "jobTitle": "Backend Developer",
                 "worksFor": {
                 "@type": "Organization",
-                "name": "LOBA"
+                "name": "7EGEND"
               }
               `}
         </script>

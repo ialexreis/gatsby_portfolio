@@ -6,6 +6,7 @@ $primary: #3dc519;
 $footer-background-color: #fff;
 $breakpoint-tablet: 768px;
 @import '~bulma/css/bulma.css';
+@import "~bulma-carousel/src/sass/index.sass";
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Noto+Serif+Display:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap');
 @import "icomoon.css";
@@ -113,7 +114,7 @@ html {
 
 .main-content {
   padding-top: 2rem;
-  color: #3c4172;
+  color: #000;
   font-family: 'Noto Serif Display', serif;
   background-color: #def2f1;
   .section-dark {
