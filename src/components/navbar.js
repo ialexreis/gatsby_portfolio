@@ -33,16 +33,10 @@ const Navbar = () => {
           <div className="column is-12 hero-menu-desktop has-text-centered">
             <ul>
               <li className="is-active">
-                <button onClick={() => scrollTo('#about')} >About Me</button>
+                <Link to="/">About me</Link>
               </li>
               <li>
-                <button onClick={() => scrollTo('#stack')}>Stack</button>
-              </li>
-              <li>
-                <button onClick={() => scrollTo('#projects')}>Projects</button>
-              </li>
-              <li>
-                <button onClick={() => scrollTo('#contact')}>Contact</button>
+                <Link to="/blog">Blog</Link>
               </li>
               <li>
                 <Link to="/uses">Uses</Link>

@@ -1,5 +1,5 @@
 import React from "react"
-import StackItem from "../components/partials/stackItem"
+import StackItem from "./partials/stackItem"
 import  styled from "styled-components"
 import {
   AiOutlineHtml5, CgCPlusPlus,
@@ -26,9 +26,9 @@ const stack = () => {
       <div className="container">
         <div className="columns">
           <div className="column has-text-left is-half is-full-mobile is-full-tablet">
-            <h1 className="subtitle is-full">
+            <h3 className="subtitle is-full">
               Experienced
-            </h1>
+            </h3>
             <div className="columns is-multiline">
               {stackObject.experienced.map(lang => (
                 <StackItem icon={lang} />

@@ -26,5 +26,5 @@ I love to learn new things and I'm always available to help others to solve prob
 <br><br>
 I consider myself a <span>funny</span> human being, <span>passionate</span>, <span>committed</span>, and also a <span>fast learner</span>!
 <br>
-Feel free to reach out to me and check out my work below! 👨🏻‍💻
+Feel free to reach out to me and download my resumé below! 👨🏻‍💻
 

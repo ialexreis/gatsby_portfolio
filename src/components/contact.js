@@ -1,59 +1,71 @@
 import React from "react"
-import styled from "styled-components"
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
-import { faGithub, faLinkedin, faFacebook, faInstagram, faDev } from "@fortawesome/free-brands-svg-icons"
+import Social from "../configs/social"
+import { DiStackoverflow } from "react-icons/all"
+import {
+  IconBrandFacebook,
+  IconBrandGithub,
+  IconBrandInstagram,
+  IconBrandLinkedin,
+  IconBrandTwitter,
+  IconBrandGmail
+} from "@tabler/icons"
 
-
-const ContactWrapper = styled.div`
-  margin-bottom:0px;
-  box-shadow: 0px 0px 0px -1px rgba(0,0,0,0.23);
-  background: linear-gradient(17deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
-`
-
-const IconLink = styled.a`
-  width: 50px;  
-  height: 50px;
-  border: 2px solid linear-gradient(17deg, #2a81de, #dbd1df, #3ad5d7, #3dc519);
-  font-size: 30px;
-  border-radius: 50%;
-  color: #43485c;
-  padding: 10px 15px;
-`
 
 const Contact = () => {
   return (
-    <ContactWrapper className="header-wrapper" id="contact">
+    <div className="header-wrapper" id="contact">
       <section className="is-large" >
         <div className="hero-body">
           <div className="container has-text-centered">
             <div className="columns is-vcentered">
               <div className="column is-three-fifths is-offset-one-fifth landing-caption">
                 <h1 className="title">Contact Me</h1>
-                <h3>If you want to <span>talk</span>, you can <span>find me</span> at:</h3><br/><br/>
-                <h2><a href="mailto:alex.cst.reis@gmail.com">alex.cst.reis@gmail.com</a></h2>
-                <ul>
-                  <li>
-                    <IconLink target="_blank"  href="https://github.com/adevr"><FontAwesomeIcon icon={faGithub}/></IconLink>
-                  </li>
-                  <li>
-                    <IconLink target="_blank" href="https://dev.to/adevr"><FontAwesomeIcon icon={faDev} /></IconLink>
-                  </li>
-                  <li>
-                    <IconLink target="_blank"  href="https://www.linkedin.com/in/alexandre-reis-dev/"><FontAwesomeIcon icon={faLinkedin}/></IconLink>
-                  </li>
-                  <li>
-                    <IconLink target="_blank" href="https://www.facebook.com/lexreis12"><FontAwesomeIcon icon={faFacebook}/></IconLink>
-                  </li>
-                  <li>
-                    <IconLink target="_blank"  href="https://www.instagram.com/alexiscreis/"><FontAwesomeIcon icon={faInstagram}/></IconLink>
-                  </li>
-                </ul>
+                <h3>If you want to reach out or hire me use:</h3>
+                <div className="mt-5">
+                  <a className="has-text-black" target="_blank" href="mailto:alex.cst.reis@gmail.com"><IconBrandGmail
+                    size={36}
+                    color="black"
+                    stroke={1}
+                    strokeLinejoin="miter"
+                  /></a>
+                  <a className="has-text-black" target="_blank" href={Social.stackoverflow}><DiStackoverflow  size={24}/></a>
+                  <a className="has-text-black" target="_blank" href={Social.github}><IconBrandGithub
+                    size={36}
+                    color="black"
+                    stroke={1}
+                    strokeLinejoin="miter"
+                  /></a>
+                  <a className="has-text-black" target="_blank" href={Social.twitter}><IconBrandTwitter
+                    size={36}
+                    color="black"
+                    stroke={1}
+                    strokeLinejoin="miter"
+                  /></a>
+                  <a className="has-text-black" target="_blank" href={Social.instagram}><IconBrandInstagram
+                    size={36}
+                    color="black"
+                    stroke={1}
+                    strokeLinejoin="miter"
+                  /></a>
+                  <a className="has-text-black" target="_blank" href={Social.facebook}><IconBrandFacebook
+                    size={36}
+                    color="black"
+                    stroke={1}
+                    strokeLinejoin="miter"
+                  /></a>
+                  <a className="has-text-black" target="_blank" href={Social.linkedin}><IconBrandLinkedin
+                    size={36}
+                    color="black"
+                    stroke={1}
+                    strokeLinejoin="miter"
+                  /></a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-    </ContactWrapper>
+    </div>
   )
 }
 

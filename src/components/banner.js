@@ -1,6 +1,4 @@
 import React from "react"
-import Navbar from "../components/navbar"
-import NavbarMobile from "../components/navbar.mobile"
 import {
   IconBrandGithub,
   IconBrandFacebook,
@@ -9,21 +7,18 @@ import {
   IconBrandInstagram,
 } from "@tabler/icons"
 import Loadable from "@loadable/component"
-import cv from "../utils/resume/alexandreReis.pdf"
 import { DiStackoverflow } from "react-icons/all"
 import Social from "../configs/social"
 
 
 const LoadableTypewriter = Loadable(() =>
-  import("../components/partials/typing.effect"),
+  import("./partials/typing.effect"),
 )
 
 const Banner = () => {
   return (
     <div className="header-wrapper" id="home">
       <section className="hero is-fullheight" id="hero">
-        <NavbarMobile />
-        <Navbar />
         <div className="hero-body">
           <div className="container has-text-centered">
             <div className="columns is-vcentered">
